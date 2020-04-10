@@ -1,1 +1,1 @@
-# wallpaper
+Wallpaper recommendation, WeChat applet development practice 
