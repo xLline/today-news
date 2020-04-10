@@ -1,0 +1,8 @@
+<!--pages/recommend/yesterday.wxml-->
+<view class=" container">
+	<text>昨日推荐</text>
+	<image src="{{yesterdayData.imagePath}}" class='infoImage'></image>
+	<text class='infoTitle'>{{yesterdayData.title}}</text>
+	<text class='infoDesc'>{{yesterdayData.desc}}</text>
+	<text wx:if="{{yesterdayData.isHot}}" class='hotText'>力荐</text>
+</view>

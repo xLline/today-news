@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container{
+  height: 100vh; /* 相对于视口的高度。视口被均分为100单位的vh */
+  display: flex; /*显示设置为 弹性*/
+  flex-direction: column; /*设置主轴方向为 垂直*/
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}

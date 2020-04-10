@@ -1,0 +1,8 @@
+<!--pages/recommend/daily.wxml-->
+<view class=" container">
+	<text>今日推荐</text>
+	<image src="{{dailyData.imagePath}}"></image>
+	<text>{{dailyData.title}}</text>
+	<text>{{dailyData.desc}}</text>
+	<text wx:if="{{dailyData.isHot}}">力荐</text>
+</view>

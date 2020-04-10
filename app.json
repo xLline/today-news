@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/recommend/list",
+    "pages/about/about",
+    "pages/index/index",
+    "pages/recommend/daily",
+    "pages/recommend/yesterday",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "一只大毛",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": { 
+    "color": "#000",
+    "selectedColor": "#696969",
+    "list": [
+      {
+        "text": "推荐",
+        "pagePath": "pages/recommend/list",
+        "iconPath": "images/icon/recommend_c.png",
+        "selectedIconPath": "images/icon/recommend_selected.png"
+      },
+      {
+      "text": "关于",
+      "pagePath": "pages/about/about",
+      "iconPath": "images/icon/about_c.png",
+      "selectedIconPath": "images/icon/about_selected.png"
+    }
+  ]
+  }
+}

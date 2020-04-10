@@ -1,0 +1,15 @@
+/* pages/recommend/yesterday.wxss */
+.infoImage{
+  width: 700rpx;
+  height: 400rpx;
+}
+.infoTitle{
+  font-weight: bold;
+}
+.infoDesc{
+  font-size: 30rpx;
+}
+.hotText {
+  color: #f00;
+  font-weight: bold;
+}
