@@ -3,7 +3,7 @@
   <view class="page-body">
     <view class='page-section-spacing'>
       <swiper
-          indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+          indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" current='{{currentIndex}}'
           interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}" next-margin="{{nextMargin}}"  class='swiper'>
             <swiper-item wx:for='{{imageList}}' wx:for-item='item' wx:key='title'>
               <image src='{{item.imagePath}}' class='swiper-image'></image>
@@ -15,14 +15,12 @@
         <view class="itemLeft">
           <image src='{{imageInfo.imagePath}}'></image>
           <view class='imageName'>{{imageInfo.title}}<text wx:if="{{imageInfo.isHot}}" class='hotText'>  推荐</text></view>
-          
         </view>
         
         <view class='imageRight'>
           <view><text class='listText'>{{imageInfo.desc}}</text></view>
-          <view>于 <text class='listText'>{{imageInfo.time}}</text> 更新</view>
+          <view class='listText bottomText'><text>{{imageInfo.time}}</text>更新，{{imageInfo.count}}次<text bindtap="f0" data-id="{{imageInfo.id}}">浏览</text></view>
       </view>
-      
 
     </view>
   </view>

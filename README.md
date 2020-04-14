@@ -1,1 +1,1 @@
-Wallpaper recommendation, WeChat applet development practice 
+练手项目。调用聚合api获取最新新闻头条，各类社会、国际、军事、科技等资讯，更新周期5-30分钟

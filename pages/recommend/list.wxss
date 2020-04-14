@@ -64,7 +64,10 @@
 .hotText{
   color:red; font-weight: bold; font-size:20rpx;
 }
-
 .listText{
+ 
   color: dimgray;
+}
+.bottomText{
+  font-size: 22rpx;width: 288rpx;text-align: right;height: 44rpxpx;font-weight: bold;
 }
