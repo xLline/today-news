@@ -73,26 +73,11 @@ Page({
    */
   onPullDownRefresh: function () {
     console.log('当前页面监听到用户执行了下拉动作');
-    let that = this;
-    wx.request({
-      url: 'https://v.juhe.cn/toutiao/index?key=903fec10365270fa225e390179fceabd',
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success(res){
-        console.log(res)
-        if(!res.data.result.resultCode && res.data.result.stat){
-          that.setData({
-            newsList: res.data.result.data
-          })
-        }
-        setTimeout(function() {
-          wx.hideNavigationBarLoading()
-        }, 3200);
-      }
-    });
-    wx.showNavigationBarLoading();
-
+    this.onLoad()
+    setTimeout(() => {
+      wx.hideNavigationBarLoading()
+      wx.stopPullDownRefresh()
+    }, 3200);
   },
 
   /**

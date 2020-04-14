@@ -69,6 +69,11 @@ Page({
    */
   onPullDownRefresh: function () {
     console.log('当前页面监听到用户执行了下拉动作');
+    this.onLoad()
+    setTimeout(() => {
+      wx.hideNavigationBarLoading()
+      wx.stopPullDownRefresh()
+    }, 3200);
   },
 
   /**

@@ -1,4 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "军事新闻"
+  "navigationBarTitleText": "军事新闻",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
 }

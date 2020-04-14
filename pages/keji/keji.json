@@ -1,4 +1,6 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "科技新闻"
+  "navigationBarTitleText": "科技新闻",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
 }
