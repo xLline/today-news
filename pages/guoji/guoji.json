@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "guojiList": "/components/news/list"
+  },
   "navigationBarTitleText": "国际新闻",
   "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true

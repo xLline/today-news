@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "shehuiList": "/components/news/list"
+  },
   "navigationBarTitleText": "社会新闻",
   "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true

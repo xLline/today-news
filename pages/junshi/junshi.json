@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "junshiList": "/components/news/list"
+  },
   "navigationBarTitleText": "军事新闻",
   "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true

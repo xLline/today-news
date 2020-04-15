@@ -2,31 +2,7 @@
 <!--pages/top/top.wxml-->
 <view class="container">
   <view class="page-body">
-    <view class="newsList" wx:for='{{newsList}}' wx:for-item='newsInfo' wx:key='uniquekey' bindtap="checkNew" data-news-url="{{newsInfo.url}}">
-
-      <view wx:if="{{newsInfo.thumbnail_pic_s && newsInfo.thumbnail_pic_s02}}">
-        <text class='newsTtitle'>{{newsInfo.title}}</text>
-        <view>
-          <image class='newsThumbnail' src='{{newsInfo.thumbnail_pic_s}}'></image>
-          <image class='newsThumbnail' src='{{newsInfo.thumbnail_pic_s02}}'></image>
-          <image class='newsThumbnail' src='{{newsInfo.thumbnail_pic_s03}}' wx:if="{{newsInfo.thumbnail_pic_s03}}"></image>
-        </view>
-        <view class='sourceAndDate'>
-            <text class='scoure'>{{newsInfo.author_name}} </text>
-            <text class='date'>  {{newsInfo.date}} 发布</text>
-        </view>  
-      </view>
-
-      <view wx:else class='newsOne'>
-        <view class='newsLeft'>
-          <text class='newsTtitle newsLeft'>{{newsInfo.title}}</text>
-          <view class='sourceAndDate newsButton'>{{newsInfo.author_name}} {{newsInfo.date}} 发布</view>
-        </view>
-        <image class='newsThumbnail newsRight' src='{{newsInfo.thumbnail_pic_s}}'></image>
-      </view>
-
-      <view class="line"></view>
-    </view>
+    <junshiList newsList="{{newsList}}"/>
   </view>
 </view>
 

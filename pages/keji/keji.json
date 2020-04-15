@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "kejiList": "/components/news/list"
+  },
   "navigationBarTitleText": "科技新闻",
   "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true

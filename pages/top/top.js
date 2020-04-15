@@ -13,6 +13,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    wx.showNavigationBarLoading();
     wx.request({
       url: 'https://v.juhe.cn/toutiao/index?key=903fec10365270fa225e390179fceabd',
       header: {
@@ -24,12 +25,10 @@ Page({
           that.setData({
             newsList: res.data.result.data
           })
-
         }
-        wx.hideNavigationBarLoading()
       }
     });
-    wx.showNavigationBarLoading();
+    wx.hideNavigationBarLoading()
   },
   
   checkNew: function(envent){
@@ -74,6 +73,7 @@ Page({
   onPullDownRefresh: function () {
     console.log('当前页面监听到用户执行了下拉动作');
     this.onLoad()
+    wx.showNavigationBarLoading()
     setTimeout(() => {
       wx.hideNavigationBarLoading()
       wx.stopPullDownRefresh()

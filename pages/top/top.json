@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "topList": "/components/news/list"
+  },
   "navigationBarTitleText": "今日头条",
   "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true

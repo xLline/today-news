@@ -25,8 +25,10 @@ Page({
             newsList: res.data.result.data
           })
         }
+        wx.hideNavigationBarLoading()
       }
     });
+    wx.showNavigationBarLoading();
   },
 
   checkNew: function(envent){
@@ -70,6 +72,7 @@ Page({
   onPullDownRefresh: function () {
     console.log('当前页面监听到用户执行了下拉动作');
     this.onLoad()
+    wx.showNavigationBarLoading()
     setTimeout(() => {
       wx.hideNavigationBarLoading()
       wx.stopPullDownRefresh()
