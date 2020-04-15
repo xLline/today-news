@@ -31,13 +31,6 @@ Page({
     wx.hideNavigationBarLoading()
   },
   
-  checkNew: function(envent){
-    var newsUrl = envent.currentTarget.dataset.newsUrl;
-    wx.navigateTo({
-      url: '../detail/detail?newsUrl='+ newsUrl,
-    });
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

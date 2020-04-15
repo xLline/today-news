@@ -1,14 +1,11 @@
 {
   "pages": [
+    
     "pages/top/top",
     "pages/shehui/shehui",
     "pages/guoji/guoji",
     "pages/junshi/junshi",
-    "pages/keji/keji",
-    "pages/recommend/list",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/keji/keji"
   ],
   "window": {
     "backgroundTextStyle": "light",

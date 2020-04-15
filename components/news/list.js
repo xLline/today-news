@@ -21,6 +21,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    checkNews: function(envent){
+      var newsUrl = envent.currentTarget.dataset.newsUrl;
+      wx.navigateTo({
+        url: '../detail/detail?newsUrl='+ newsUrl,
+      });
+    },
   }
 })

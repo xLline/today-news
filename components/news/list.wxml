@@ -1,5 +1,5 @@
 <!--components/news/list.wxml-->
-<view class="newsList" wx:for='{{newsList}}' wx:for-item='newsInfo' wx:key='uniquekey' bindtap="checkNew" data-news-url="{{newsInfo.url}}">
+<view class="newsList" wx:for='{{newsList}}' wx:for-item='newsInfo' wx:key='uniquekey' bindtap="checkNews" data-news-url="{{newsInfo.url}}">
   <view wx:if="{{newsInfo.thumbnail_pic_s && newsInfo.thumbnail_pic_s02}}">
     <text class='newsTtitle'>{{newsInfo.title}}</text>
     <view>
